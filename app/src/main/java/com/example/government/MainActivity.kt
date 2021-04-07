@@ -26,8 +26,18 @@ class MainActivity : AppCompatActivity() {
         var spoilt = findViewById<TextInputEditText>(R.id.spoiltpapers)
         var reject = findViewById<TextInputEditText>(R.id.rejectedballot)
         var btncal = findViewById<Button>(R.id.calculate)
-        var amount : Array<Int>
-        var months: Array<String>
+
+        var used : Int = 0
+        var unused : Int = 0
+        val pie = AnyChart.pie()
+        var dataEntries: MutableList<DataEntry> = ArrayList()
+        dataEntries.add(ValueDataEntry("Used", used))
+        dataEntries.add(ValueDataEntry("Unused", unused))
+        pie.data(dataEntries)
+        pie.data(dataEntries)
+        pie.title("Ballot Papers")
+        any_chart_view.setChart(pie)
+
 
         btncal.setOnClickListener {
             if (validvotes.text.toString().isEmpty()){
@@ -54,44 +64,18 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "valid votes cannot be greater than ballot papers issue", Toast.LENGTH_SHORT).show();
             }
             else{
-
+                used = reject.text.toString().toInt() + validvotes.text.toString().toInt()
+                unused = spoilt.text.toString().toInt() + (totalballotpapers.text.toString().toInt() - used)
+                var dataEntries: MutableList<DataEntry> = ArrayList()
+                dataEntries.add(ValueDataEntry("Used " + used.toString(), used))
+                dataEntries.add(ValueDataEntry("Unused "+unused.toString(), unused))
+                pie.data(dataEntries)
          }
 
         }
-        var used : Int = reject.text.toString().toInt() + validvotes.text.toString().toInt()
-        var unused : Int = spoilt.text.toString().toInt() + (totalballotpapers.text.toString().toInt() - used)
-        amount = arrayOf(used, unused)
-        months = arrayOf(
-                "Used  "+used.toString()+" ",
-                "Unused "+unused.toString()+" "
-        )
-        val pie = AnyChart.pie()
-        val dataEntries: MutableList<DataEntry> =
-                ArrayList()
-
-        for (i in months.indices) {
-            dataEntries.add(ValueDataEntry(months[i], amount[i]))
-        }
-        pie.data(dataEntries)
-        pie.title("Ballot Papers")
-        any_chart_view.setChart(pie)
-
-        val delayMillis: Long = 5000
-        val handler = Handler()
-        val runnable: Runnable = object : Runnable {
-            override fun run() {
-                val data: MutableList<DataEntry> = ArrayList()
-                for (i in months.indices) {
-                    data.add(ValueDataEntry(months[i], amount[i]))
-                }
-                pie.data(data)
-                handler.postDelayed(this, delayMillis)
-            }
-        }
-        handler.postDelayed(runnable, delayMillis)
-
 
     }
+
 
 
     fun setupPieChart(months: Array<String>, amount: Array<Int>){
