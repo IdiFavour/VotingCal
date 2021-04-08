@@ -69,6 +69,7 @@
                     android:textColor="@color/black"
                     android:id="@+id/wardno"
                     android:hint="Ward Number"
+                    android:id="@+id/wardno"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -107,6 +108,7 @@
                     android:fontFamily="@font/overpass_semibold"
                     android:textColor="@color/black"
                     android:hint="Email"
+                    android:id="@+id/emailreg"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -129,6 +131,7 @@
                     android:fontFamily="@font/overpass_semibold"
                     android:textColor="@color/black"
                     android:hint="Password"
+                    android:id="@+id/passwordreg"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
