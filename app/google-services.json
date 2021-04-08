@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1028067329093",
+    "project_id": "votingcalculator-e88d2",
+    "storage_bucket": "votingcalculator-e88d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028067329093:android:0873d86195699adc184f2c",
+        "android_client_info": {
+          "package_name": "com.example.government"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028067329093-hit9suhi6rhdatsppmv99dliuvv7mk0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyEVh4MGk2ttOZTQ9kDZue_96xjDRf5fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028067329093-hit9suhi6rhdatsppmv99dliuvv7mk0k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
