@@ -67,6 +67,7 @@
                     android:drawablePadding="6dp"
                     android:fontFamily="@font/overpass_semibold"
                     android:textColor="@color/black"
+                    android:id="@+id/wardno"
                     android:hint="Ward Number"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -86,6 +87,7 @@
                     android:fontFamily="@font/overpass_semibold"
                     android:textColor="@color/black"
                     android:hint="Unit Number"
+                    android:id="@+id/unitno"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
 

@@ -69,6 +69,7 @@
                     android:fontFamily="@font/overpass_semibold"
                     android:textColor="@color/black"
                     android:hint="Email"
+                    android:id="@+id/email"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,6 +92,7 @@
                     android:fontFamily="@font/overpass_semibold"
                     android:textColor="@color/black"
                     android:hint="Password"
+                    android:id="@+id/password"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>

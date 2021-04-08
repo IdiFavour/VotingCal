@@ -1023,7 +1023,7 @@ internal object ExpandableListData {
             expandableListDetail["CHAPTER 4"] = chapterFour
             expandableListDetail["CHAPTER 5"] = chapterFive
             expandableListDetail["CHAPTER 6"] = chapterSix
-            expandableListDetail["CHAPTER 6"] = chapterSeven
+            expandableListDetail["CHAPTER 7"] = chapterSeven
             expandableListDetail["CHAPTER 1"] = myFavTennisPlayers
             expandableListDetail["CHAPTER 2"] = myFavFootballPlayers
 
