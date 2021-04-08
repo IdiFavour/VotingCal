@@ -113,6 +113,7 @@ internal object ExpandableListData {
                     "property conducted.\n" +
                     "5. Report any Security concern or incident to the Security Agencies.\n" +
                     "6. Keep securely the ballot boxes and other electoral materials returned")
+
             myFavTennisPlayers.add("2.3 Duties of Collation and Returning Officers\n" +
                     "S/N ELECTION OFFICIAL DUTIES\n" +
                     "The Respective Election Officer shall:\n" +
@@ -182,8 +183,114 @@ internal object ExpandableListData {
                     "3. Stand behind the last person in the queue at the close of voting (3.00 pm) to\n" +
                     "ensure that anyone arriving after that time will not vote.\n" +
                     "4. Assist in the sorting and counting of votes.\n" +
-                    "5. Assist with the return of the election materials to the SPO. ")
-            myFavTennisPlayers.add("")
+                    "5. Assist with the return of the election materials to the SPO. \n\n")
+            myFavTennisPlayers.add("3. PROFESSIONAL ETHICS OF ELECTION OFFICIALS\n" +
+                    "The credibility of an election confers legitimacy on the election and acceptability of\n" +
+                    "the outcome of the election. The Commission strives to ensure the legitimacy of the\n" +
+                    "processes for which it is responsible. To achieve this, Election Officials must\n" +
+                    "recognize and understand that the successful administration of the election process is\n" +
+                    "founded on the basic fundamental guiding principles of independence, impartiality,\n" +
+                    "integrity and transparency. These principles form the ethical basis of election\n" +
+                    "administration and are essential to ensure both the appearance and the actual integrity\n" +
+                    "of the electoral process. The guiding principles are the ethical framework for election\n" +
+                    "officials conducting election If the election must be credible and the outcome\n" +
+                    "acceptable, Election Officials, in the discharge of their duties must:\n" +
+                    "• Be transparent and neutral\n" +
+                    "• Exhibit high level of integrity\n" +
+                    "• Be credible, courageous and dedicated\n" +
+                    "• Respect the secrecy of the vote\n" +
+                    "• Conduct their duties according to the Constitution of the Federal Republic of\n" +
+                    "Nigeria, 1999, the Rivers State Independent Electoral Commission (RSIEC) Law\n" +
+                    "2018 and RSIEC Guidelines. \n\n" +
+                    "4. ACCESS TO POLLING STATIONS AND COLLATION CENTRES\n" +
+                    "The following categories of persons shall be allowed full access to the polling\n" +
+                    "stations and collation centres:\n" +
+                    "• Voters\n" +
+                    "• RSIEC officials on Election duty\n" +
+                    "• Security Agents\n" +
+                    "• Accredited Polling/Agents\n" +
+                    "• Accredited Journalists\n" +
+                    "• Accredited Domestic and International Observers\n" +
+                    "• Accredited Monitors\n" +
+                    "The presiding Officers and the Returning Officers, however, have the right to bar\n" +
+                    "anyone from entering the Polling Station and the Collation Centre respectively,\n" +
+                    "should the individual disturb the peace.\n\n" +
+                    "4.1 Right and Responsibilities of Polling Party Agents\n" +
+                    "The main responsibility of Polling Agents/Party Agents is to attend at Polling\n" +
+                    "Stations and collation centres to watch the proceedings i.e. polling and counting of\n" +
+                    "ballots and the collation and announcement of results on behalf of their candidates\n" +
+                    "and political parties: and be satisfied that the processes are conducted in\n" +
+                    "accordance with the law and the regulations.\n" +
+                    "With regard to the Polling Agents, Election Officials shall:\n" +
+                    "• Allow each political party to be represented by one accredited Polling l Party\n" +
+                    "Agent at a time in the polling stations and collation centres.\n" +
+                    "• Accredited Party Agents must have RSIEC issued ID cards displayed at all times.\n" +
+                    "• Inspect and ensure that the letters of appointments Accreditation are duly\n" +
+                    "endorsed by RSIEC before letting the Polling/Party Agents into the polling\n" +
+                    "stations and collation centres.\n" +
+                    "• Allow the Polling/Party Agents access to the polling station and collation centres\n" +
+                    "to watch the conduct of the polls and the counting and collation of votes and the\n" +
+                    "announcement of results.\n" +
+                    "• Commence the election processes even if no Polling/Party Agents are present in\n" +
+                    "the polling stations or collation centres.\n" +
+                    "• Allow Polling/Party Agents to call the attention of the Presiding Officer and\n" +
+                    "Collation/Returning Officer to any irregularity.\n" +
+                    "• At the Polling Station, allow Polling/Party Agents to inform the Presiding\n" +
+                    "Officer if they believe that any voter is under the age of 18 years or has\n" +
+                    "committed an offence of impersonation.\n" +
+                    "• Mow all Polling/Party Agents to sign the Result Sheets/Forms at the polling\n" +
+                    "station and the collation forms at the collation centres.\n" +
+                    "• Distribute signed and stamped copies of the Statement of Result of Poll Forms\n" +
+                    "and Collation of Result Forms to the Poling/Party Agents.\n" +
+                    "Polling/Party Agents are not allowed to interfere in the conduct of the polls and\n" +
+                    "the counting of the ballots or the collation and declaration of results.\n" +
+                    "Polling/Party Agents shall comply with any lawful directive issued by or under\n" +
+                    "the authority of RSIEC including an order to leave the polling station or\n" +
+                    "collation centre.\n" +
+                    "4.2 Rights and Responsibility of Accredited Observers\n" +
+                    "Domestic and International observers have the right to observe the voting\n" +
+                    "process, the counting of ballots at the polling stations, the collation and\n" +
+                    "announcement of results at the collation centres, and Declaration of Results at\n" +
+                    "the Headquarters.\n" +
+                    "With regard to Election Observers, Election Officials shall:\n" +
+                    "• Be satisfied that the Election Observers are duly accredited.\n" +
+                    "• Allow the Observers access to the polling stations and collation centres to\n" +
+                    "observe the conduct of the polls, the counting of the votes and the collation of\n" +
+                    "Results.\n" +
+                    "• Allow observers to call the attention of the Presiding Officer and the Returning\n" +
+                    "Officer to any irregularity.\n")
+            myFavTennisPlayers.add("Election Observers are not allowed to interfere in the conduct of the poll,\n" +
+                    "counting of ballots or the collation, announcement and declaration of result.\n" +
+                    "Observers shall comply with any lawful directive issued by or under the\n" +
+                    "authority of RSIEC including an order to leave the polling station or the\n" +
+                    "collation centre.\n" +
+                    "4.3 Responsibility of Security Agents\n" +
+                    "It is important that the conduct of the poll and the collation, announcement and\n" +
+                    "declaration of results be done without any disturbance or threat to the peace.\n" +
+                    "Security Agents shall:\n" +
+                    "• Provide security at the p01mg stations and collation centres to ensure that the\n" +
+                    "polling, counting of ballots, collation, announcement and declaration of results are\n" +
+                    "conducted without any disturbance.\n" +
+                    "• Take all necessary measures to prevent violence or any activity that would threaten\n" +
+                    "to disrupt the elections.\n" +
+                    "• Comply with any lawful directions issued by Election Officials or under the\n" +
+                    "authority of RSIEC.\n" +
+                    "• Ensure the safety and security of all election materials by escorting and guarding\n" +
+                    "the materials, as appropriate.\n" +
+                    "• Protect the Election Officials at the polhn9 stations and collation centres.\n" +
+                    "• A7est on the instruction of the Presiding Officer or other RSIEC officials any\n" +
+                    "person causing any disturbance or preventing the smooth conduct of proceedings\n" +
+                    "at the polling stations and collation centres.\n" +
+                    "• At the polling station. inform the Presiding Officer if they believe that any voter is\n" +
+                    "under age of 18 years or has committed an offence of impersonation.\n" +
+                    "• On the instruction of the Presiding Officer, stand at the end of the queue of voters\n" +
+                    "at the p01mg station, if any, at the time set for the closing of Polls (3:00 pm)\n" +
+                    "prompt, so that any person entering the polling station after this time is not allowed\n" +
+                    "to vote.\n" +
+                    "• Accompany the Presiding Officer to deliver the election results, ballot boxes and\n" +
+                    "other election materials safety to Ward Collation Centre.\n" +
+                    "• Security Agents are not allowed to interfere in the conduct of the polls, counting of\n" +
+                    "the ballots, the collation, or announcement and declaration of results. ")
             expandableListDetail["CHAPTER 3"] = myFavCricketPlayers
             expandableListDetail["CHAPTER 4"] = chapterFour
             expandableListDetail["CHAPTER 1"] = myFavTennisPlayers

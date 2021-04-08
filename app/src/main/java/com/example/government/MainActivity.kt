@@ -77,20 +77,20 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-    fun setupPieChart(months: Array<String>, amount: Array<Int>){
-
-        val pie = AnyChart.pie()
-        val dataEntries: MutableList<DataEntry> =
-            ArrayList()
-
-        for (i in months.indices) {
-            dataEntries.add(ValueDataEntry(months[i], amount[i]))
-        }
-        pie.data(dataEntries)
-        pie.title("Ballot Papers")
-        any_chart_view.setChart(pie)
-    }
+//
+//    fun setupPieChart(months: Array<String>, amount: Array<Int>){
+//
+//        val pie = AnyChart.pie()
+//        val dataEntries: MutableList<DataEntry> =
+//            ArrayList()
+//
+//        for (i in months.indices) {
+//            dataEntries.add(ValueDataEntry(months[i], amount[i]))
+//        }
+//        pie.data(dataEntries)
+//        pie.title("Ballot Papers")
+//        any_chart_view.setChart(pie)
+//    }
 
 
 }
