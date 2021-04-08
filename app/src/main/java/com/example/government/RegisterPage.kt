@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login_page.*
 import kotlinx.android.synthetic.main.activity_login_page.btnBackHome
 import kotlinx.android.synthetic.main.activity_register_page.*
@@ -17,13 +14,15 @@ import kotlinx.android.synthetic.main.activity_register_page.*
 class RegisterPage : AppCompatActivity() {
 
     private lateinit var signAuth : FirebaseAuth
+//    private lateinit var database: DatabaseReference
+    private var connection = FirebaseDatabase.getInstance().reference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_page)
 
         signAuth = FirebaseAuth.getInstance()
-        var connection = FirebaseDatabase.getInstance().reference
+
 
         btnBackHome.setOnClickListener {
             startActivity(Intent(this,LoginandReg::class.java))
@@ -51,7 +50,6 @@ class RegisterPage : AppCompatActivity() {
                 return@setOnClickListener
             }
             else{
-//                connection.child(emailreg.text.toString()).setValue(userDetails(wardno.text.toString(), unitno.text.toString()))
                 userRegistration(emailreg.text.toString(), passwordreg.text.toString(), wardno.text.toString(), unitno.text.toString())
             }
         }
@@ -61,8 +59,7 @@ class RegisterPage : AppCompatActivity() {
         signAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this) {
                 task -> if(task.isSuccessful){
             //function goes here
-            Toast.makeText(this@RegisterPage, "Registration successful", Toast.LENGTH_SHORT).show()
-            welcome()
+            writeNewUser(wardnum, unitnum)
         }else{
             task.exception?.message?.let {
                 msg(it)
@@ -71,24 +68,11 @@ class RegisterPage : AppCompatActivity() {
         }
     }
 
-//    private fun addData(WardNumber : String , UnitNumber : String){
-//
-//        connection.addValueEventListener(object : ValueEventListener {
-//            override fun onDataChange(snapshot: DataSnapshot) {
-//                // inside the method of on Data change we are setting
-//                // our object class to our database reference.
-//                // data base reference will sends data to firebase.
-//
-//                // after adding this data we are showing toast message.
-//                Toast.makeText(this@RegisterPage, "Registration successful", Toast.LENGTH_SHORT).show()
-//                welcome()
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//                // if the data is not added or it is cancelled then
-//                // we are displaying a failure toast message.
-//                Toast.makeText(this@RegisterPage, "Fail to add data $error", Toast.LENGTH_SHORT).show()
-//            }
-//        })
-//    }
+    fun writeNewUser(wardnum: String, unitnum: String) {
+        val user = userDetails(wardnum, unitnum)
+        connection.push().setValue(user)
+        welcome()
+    }
+
+
 }
