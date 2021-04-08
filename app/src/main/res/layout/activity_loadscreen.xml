@@ -17,10 +17,11 @@
 
     <TextView
         android:layout_width="wrap_content"
+        android:layout_marginTop="340dp"
         android:layout_height="wrap_content"
         android:text="Designed BY STRINGCODE"
         android:textColor="@color/black"
         android:fontFamily="@font/overpass_semibold"
-        android:textSize=""
+        android:textSize="12sp"
         />
 </LinearLayout>
