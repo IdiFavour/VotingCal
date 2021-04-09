@@ -2,12 +2,10 @@ package com.example.government
 
 import java.util.*
 internal object ExpandableListData {
-    val data: HashMap<String, List<String>>
+    val data:LinkedHashMap<String, List<String>>
         get() {
-            val expandableListDetail =
-                HashMap<String, List<String>>()
-            val myFavCricketPlayers: MutableList<String> =
-                ArrayList()
+            val expandableListDetail = LinkedHashMap<String, List<String>>()
+            val myFavCricketPlayers: MutableList<String> = ArrayList()
             myFavCricketPlayers.add("\t\t\tVOTING PROCEDURE\n\n" +
                     "3.1 CHECKING THE REGISTER FOR THE VOTER’S NAME\n" +
                     "Step1: A prospective voter shall present him/herself with his/her (temporary or\n" +
