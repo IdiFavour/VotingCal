@@ -48,17 +48,4 @@ class LoginPage : AppCompatActivity() {
             }
         }
     }
-    private fun userLog(email : String, password : String){
-        signAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this){
-                work ->
-            if (work.isSuccessful){
-                welcome()
-            }
-            else{
-                work.exception?.message?.let {
-                    msg(it)
-                }
-            }
-        }
-    }
 }
