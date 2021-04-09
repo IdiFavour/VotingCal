@@ -17,5 +17,8 @@ class LoginandReg : AppCompatActivity() {
         idregister.setOnClickListener {
             startActivity(Intent(this,RegisterPage::class.java))
         }
+        makecalculate.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
     }
 }

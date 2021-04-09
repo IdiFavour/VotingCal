@@ -1,11 +1,13 @@
 package com.example.government
 
 import java.util.*
+import kotlin.collections.LinkedHashMap
+
 internal object ExpandableListData {
     val data: HashMap<String, List<String>>
         get() {
             val expandableListDetail =
-                HashMap<String, List<String>>()
+                LinkedHashMap<String, List<String>>()
             val myFavCricketPlayers: MutableList<String> =
                 ArrayList()
             myFavCricketPlayers.add("\t\t\tVOTING PROCEDURE\n\n" +
