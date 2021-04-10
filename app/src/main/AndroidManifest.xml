@@ -9,9 +9,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Government">
-        <activity android:name=".wardDashboard">
-
-        </activity>
+        <activity android:name=".WardOption"></activity>
+        <activity android:name=".wardDashboard"></activity>
         <activity android:name=".Manuel" />
         <activity android:name=".Option" />
         <activity android:name=".RegisterPage" />

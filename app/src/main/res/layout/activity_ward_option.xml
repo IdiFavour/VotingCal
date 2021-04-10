@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Option">
+    tools:context=".WardOption">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,17 +31,17 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/optionpage"
+            android:src="@drawable/wardelection"
             android:layout_marginTop="-120dp"
             android:layout_marginBottom="60dp"/>
 
         <Button
-            android:id="@+id/idcalculate"
+            android:id="@+id/checkward"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/login_btn_bg"
             android:fontFamily="@font/overpass_semibold"
-            android:text="Calculate Ballot"
+            android:text="Check Wards"
             android:textColor="@color/white"
             android:layout_marginBottom="20dp"
             app:backgroundTint="@color/color1" />
