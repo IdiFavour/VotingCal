@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/login_btn_bg"
             android:fontFamily="@font/overpass_semibold"
-            android:text="Calculate Ballot"
+            android:text="Calculate unit results"
             android:textColor="@color/white"
             android:layout_marginBottom="20dp"
             app:backgroundTint="@color/color1" />

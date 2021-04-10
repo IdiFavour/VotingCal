@@ -69,6 +69,7 @@
                     android:textColor="@color/black"
                     android:id="@+id/wardno"
                     android:hint="Ward Number"
+                    android:id="@+id/wardno"
 
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
