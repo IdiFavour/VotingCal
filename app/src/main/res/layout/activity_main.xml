@@ -64,7 +64,7 @@
                                 android:layout_height="wrap_content"
                                 android:drawablePadding="6dp"
                                 android:fontFamily="@font/overpass_semibold"
-                                android:hint="Valid Votes Casted"
+                                android:hint="Valid Votes"
                                 android:inputType="number"
                                 android:id="@+id/validvotes"
                                 android:textColor="@color/black" />
