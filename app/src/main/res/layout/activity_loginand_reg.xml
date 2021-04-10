@@ -62,7 +62,7 @@
                 android:id="@+id/makecalculate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Make A Calculation"
+                android:text="Get Started"
                 android:textColor="@color/color1"
                 android:fontFamily="@font/overpass_semibold"
                 android:textSize="16sp"
