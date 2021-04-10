@@ -109,13 +109,34 @@ class wardDashboard : AppCompatActivity() {
             totalvotes = 0
 
             for (used in viewused){
-                totalused += used.text.toString().toInt()
+                if(used.text.toString().isEmpty()){
+                    used.error = "Field required"
+                    used.requestFocus()
+                    return@setOnClickListener
+                }
+                else{
+                    totalused += used.text.toString().toInt()
+                }
             }
             for (unused in viewunused){
-                totalunused += unused.text.toString().toInt()
+                if(unused.text.toString().isEmpty()){
+                    unused.error = "Field required"
+                    unused.requestFocus()
+                    return@setOnClickListener
+                }
+                else{
+                    totalunused += unused.text.toString().toInt()
+                }
             }
             for (votes in viewvotes){
-                totalvotes += votes.text.toString().toInt()
+                if(votes.text.toString().isEmpty()){
+                    votes.error = "Field required"
+                    votes.requestFocus()
+                    return@setOnClickListener
+                }
+                else{
+                    totalvotes += votes.text.toString().toInt()
+                }
             }
             var dataEntries: MutableList<DataEntry> = java.util.ArrayList()
             dataEntries.add(ValueDataEntry("Used " + totalused.toString(), totalused))
