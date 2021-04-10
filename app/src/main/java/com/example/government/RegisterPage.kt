@@ -34,11 +34,6 @@ class RegisterPage : AppCompatActivity() {
                 wardno.requestFocus()
                 return@setOnClickListener
             }
-            else if(unitno.text.toString().isEmpty()){
-                unitno.error="Field is required"
-                unitno.requestFocus()
-                return@setOnClickListener
-            }
             else if(emailreg.text.toString().isEmpty()){
                 emailreg.error="Field is required"
                 emailreg.requestFocus()
@@ -50,16 +45,16 @@ class RegisterPage : AppCompatActivity() {
                 return@setOnClickListener
             }
             else{
-                userRegistration(emailreg.text.toString(), passwordreg.text.toString(), wardno.text.toString(), unitno.text.toString())
+                userRegistration(emailreg.text.toString(), passwordreg.text.toString(), wardno.text.toString())
             }
         }
     }
 
-    private fun userRegistration(email: String, pass : String, wardnum : String, unitnum : String){
+    private fun userRegistration(email: String, pass : String, wardnum : String){
         signAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this) {
                 task -> if(task.isSuccessful){
             //function goes here
-            writeNewUser(wardnum, unitnum)
+            writeNewUser(wardnum)
         }else{
             task.exception?.message?.let {
                 msg(it)
@@ -68,8 +63,8 @@ class RegisterPage : AppCompatActivity() {
         }
     }
 
-    fun writeNewUser(wardnum: String, unitnum: String) {
-        val user = userDetails(wardnum, unitnum)
+    fun writeNewUser(wardnum: String) {
+        val user = userDetails(wardnum)
         connection.push().setValue(user)
         welcome()
     }

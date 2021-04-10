@@ -72,25 +72,25 @@
                     android:id="@+id/wardno"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
-                android:paddingStart="6dp"
-                android:textColorHint="@color/black"
-                app:boxBackgroundColor="@color/white"
-                android:paddingEnd="6dp">
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                android:paddingStart="6dp"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                app:boxBackgroundColor="@color/white"-->
+<!--                android:paddingEnd="6dp">-->
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="6dp"
-                    android:fontFamily="@font/overpass_semibold"
-                    android:textColor="@color/black"
-                    android:hint="Unit Number"
-                    android:id="@+id/unitno"
-                    android:inputType="number" />
-            </com.google.android.material.textfield.TextInputLayout>
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawablePadding="6dp"-->
+<!--                    android:fontFamily="@font/overpass_semibold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:hint="Unit Number"-->
+<!--                    android:id="@+id/unitno"-->
+<!--                    android:inputType="number" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -146,6 +146,7 @@
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:textStyle="bold"
+        android:layout_marginTop="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="@+id/cardView2"
         app:layout_constraintStart_toStartOf="@+id/cardView2"

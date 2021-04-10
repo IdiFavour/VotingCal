@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         dataEntries.add(ValueDataEntry("Unused", unused))
         pie.data(dataEntries)
         pie.data(dataEntries)
-        pie.title("Ballot Papers")
+        pie.title("Results")
         pie.labels().format("{%value}")
         any_chart_view.setChart(pie)
 
