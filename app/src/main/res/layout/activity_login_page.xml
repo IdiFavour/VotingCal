@@ -103,7 +103,7 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:background="@drawable/login_btn_bg"
-        android:text="Loign"
+        android:text="Login"
         app:backgroundTint="@color/color1"
         android:textColor="@android:color/white"
         android:textSize="15sp"

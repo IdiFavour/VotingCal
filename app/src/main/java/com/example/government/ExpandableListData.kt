@@ -1020,14 +1020,13 @@ internal object ExpandableListData {
                     "(a) The Attorney-General of the State or a State Counsel in the Ministry of Justice; or\n" +
                     "(b) An officer of the Nigerian Police Force. ")
 
-
+            expandableListDetail["CHAPTER 1"] = myFavTennisPlayers
+            expandableListDetail["CHAPTER 2"] = myFavFootballPlayers
             expandableListDetail["CHAPTER 3"] = myFavCricketPlayers
             expandableListDetail["CHAPTER 4"] = chapterFour
             expandableListDetail["CHAPTER 5"] = chapterFive
             expandableListDetail["CHAPTER 6"] = chapterSix
             expandableListDetail["CHAPTER 7"] = chapterSeven
-            expandableListDetail["CHAPTER 1"] = myFavTennisPlayers
-            expandableListDetail["CHAPTER 2"] = myFavFootballPlayers
 
             return expandableListDetail
         }

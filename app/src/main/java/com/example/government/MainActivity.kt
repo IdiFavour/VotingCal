@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         pie.data(dataEntries)
         pie.data(dataEntries)
         pie.title("Ballot Papers")
+        pie.labels().format("{%value}")
         any_chart_view.setChart(pie)
 
 
@@ -75,22 +76,4 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
-
-//
-//    fun setupPieChart(months: Array<String>, amount: Array<Int>){
-//
-//        val pie = AnyChart.pie()
-//        val dataEntries: MutableList<DataEntry> =
-//            ArrayList()
-//
-//        for (i in months.indices) {
-//            dataEntries.add(ValueDataEntry(months[i], amount[i]))
-//        }
-//        pie.data(dataEntries)
-//        pie.title("Ballot Papers")
-//        any_chart_view.setChart(pie)
-//    }
-
-
 }
